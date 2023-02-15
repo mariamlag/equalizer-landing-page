@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'IBM Plex Sans';
+    display: flex;
+    background-image: url(starter-code/assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 10px -200px;
+    flex-direction: column;
+    width: 100vw;
+}
+header{
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+}
+.logo-header{
+    width: 14.6rem;
+    height: 3.2rem;
+    margin-bottom: 6.4rem;
+}
+.first-div{
+    width: 327px;
+    height: 320px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-bottom: 6.8rem;
+   
+    
+}
+.title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #191826;
+    line-height: 4.8rem;
+}
+.title-txt{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.8rem;
+    align-items: center;
+}
+.illustration-app{
+    width: 20.8rem;
+    height: 43rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.app-photo{
+    width: 20.8rem;
+    height: 43rem;
+    position: relative;
+    top: -9.8rem;
+
+}
+.bg-pattern{
+    width: 37.5rem;
+    height: 60rem;
+   
+    background-color: #191826;
+    border-radius: 1.2rem;
+    padding-left: 4.8rem;
+
+}
+.bg-img{
+    width: 280px;
+    height: 420px;
+}
+
+
+.premium-eq{
+        
+        width: 37.5rem;
+        height: 54.6rem;
+        background-color: #fa7453;
+        padding: 48px 36px;
+        border-radius: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -22rem;
+}
+
+.premium-ttl{
+    font-size: 3.2rem;
+    color: #fcfaf9;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.premium-txt{
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+    color: #fcfaf9;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.price{
+    margin-top: 3.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.four{
+    font-size: 6.5rem;
+    color: #fcfaf9;
+    font-weight: 700;
+    line-height: 5.2rem;
+}
+.month{
+    font-size: 2rem;
+    color: #fcfaf9;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-left: 1.6rem;
+}
+
+.ios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #191826;
+    width: 29.6rem;
+    height: 6.1rem;
+    border-radius: 1.2rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+    cursor: pointer;
+}
+.ios:hover{
+    background-color: #66e2dc;
+}
+.ios-txt{
+    font-size: 1.8rem;
+    color: #fcfaf9;
+    font-weight: 700;
+    line-height: 3.2rem;
+    margin-left: 0.7rem;
+}
+
+.android{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfaf9;
+    width: 29.6rem;
+    height: 6.1rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+.android:hover{
+    background-color: #ffb964;
+}
+.android-txt{
+    font-size: 1.8rem;
+    color: #191826;
+    font-weight: 700;
+    line-height: 3.2rem;
+    margin-left: 0.7rem;
+}
+
+footer{
+    display: flex;
+    width: 32.7rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+    margin-bottom: 8rem;
+
+
+}
+.logo-footer{
+    width: 14.6rem;
+    height: 3.2rem;
+    color: #191826;
+}
+.footer-tx{
+    font-size: 1.6rem;
+    color: #191826;
+    font-weight: 400;
+    line-height: 2.6rem;
+    margin-top: 3.2rem;
+}
+.mail{
+    font-size: 1.8rem;
+    color: #191826;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+.icons{
+    margin-top: 6.4rem;
+    display: flex;
+    width: 10rem;
+    height: 2rem;
+}
+svg{
+    cursor: pointer;
+}
+svg path:hover{
+    fill: #fa7453;
+}
+.background{
+    display: none;
+}
+
+
+/* tablet version */
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(starter-code/assets/bg-main-tablet.png);
+        background-position: -350px -250px;
+    } 
+    .background{
+        width: 26.6rem;
+        height: 40rem;
+        display: flex;
+        position: absolute;
+        top: -32px;
+        right: -40px;
+    }
+    header{
+        padding-top: 6.1rem;
+        padding-left: 3.9rem;
+    }   
+    .logo-header{
+        margin-bottom: 9.5rem;
+    }
+    .first-div{
+        margin-left: 3.9rem;
+        width: 520px;
+        height: 332px;
+        margin-bottom: 249px;
+    }
+    .title{
+        font-size: 6.4rem;
+        font-weight: 700;
+        color: #191826;
+        line-height: 6.4rem;
+    }
+    .container{
+        margin-top: 0;
+    }
+    .title-txt-div{
+        margin-top: 2.8rem;
+        width: 51.4rem;
+    }
+    .title-txt{
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+        color: #191826;
+    }
+    
+    .illustration-app{
+        width: 27.02rem;
+        height: 55.6rem;
+    }
+    .app-photo{
+        z-index: 2;
+        width: 27.02rem;
+        height: 55.6rem;
+        top: -13.8rem;
+        left: -15rem;
+        
+    }
+
+    .bg-pattern{
+        z-index: 1;
+        width: 69.6rem;
+        height: 60rem;
+       
+        background-color: #191826;
+        border-radius: 1.2rem;
+        padding-left: 4.8rem;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .bg-img{
+        margin-top: -3.9rem;
+    }
+    .premium-eq{
+        z-index: 3;
+        width: 39.9rem;
+        padding: 48px 49px;
+        margin-top: -45rem;
+        margin-left: 23.9rem;
+        margin-right: 5.9rem;
+    }
+
+
+    footer{
+        display: flex;
+        width: 100%;
+        padding-left: 3.3rem;
+        padding-right: 3.9rem;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 8.7rem;
+        margin-bottom: 8.5rem;
+    
+    
+    }
+
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .footer-txt{
+        width: 36.6em;
+        height: 7.9em;
+    }
+    .mail{
+        font-size: 1.8rem;
+        color: #191826;
+        font-weight: 700;
+        line-height: 3.2rem;
+    }
+
+   
+}
+
+
+@media only screen and (min-width: 1440px) {
+    body{
+        background-image: url(starter-code/assets/bg-main-desktop.png);
+        background-position: -350px -250px;
+    } 
+    .background{
+        width: 31.2rem;
+        height: 46.8rem;
+        top: -40px;
+        right: 0;
+    }
+    header{
+        padding-top: 6.19em;
+        padding-left: 16.5em;
+    }   
+    .logo-header{
+        margin-bottom: 12.7rem;
+    }
+    .first-div{
+        margin-left: 16.5rem;
+        width: 101.53em;
+        height: 332px;
+        margin-bottom: 321px;
+    }
+    .title{
+        font-size: 8.8rem;
+        font-weight: 700;
+        color: #191826;
+        line-height: 8.8rem;
+    }
+    .container{
+        margin-top: 0;
+    }
+    .title-txt-div{
+        margin-top: 2.8em;
+        width: 82.5em;
+
+    }
+    .title-txt{
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3.4rem;
+        color: #191826;
+    }
+    
+    .illustration-app{
+        width: 28rem;
+        height: 60.6rem;
+    }
+    .app-photo{
+        width: 28rem;
+        height: 60.2rem;
+        top: -19.4rem;
+        left: -30rem;
+        
+    }
+
+    .bg-pattern{
+        width: 111rem;
+        border-radius: 1.2rem;
+        padding-left: 4.8rem;
+    
+    }
+    .bg-img{
+        margin-top: -3.9rem;
+        margin-left: -23rem;
+    }
+    .premium-eq{
+        width: 44.6rem;
+        height: 62.5rem;
+        padding: 58px 59px 48px 54px;
+        margin-top: -52rem;
+        margin-left: 56.9rem;
+        margin-right: 9.5rem;
+    }
+    .premium-ttl{
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+    .premium-txt{
+        margin-top: 2.2rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 3.4rem;
+    }
+    
+    .price{
+        margin-top: 3.6rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    
+    .ios, .android{
+        width: 33.3rem;
+        height: 6.1rem;
+    }
+    
+
+
+    footer{
+        padding-left: 16.6rem;
+        padding-right: 16.5rem;
+        margin-bottom: 9.1rem;
+        align-items: center;
+    
+    }
+
+    .footer-div{
+        flex-direction: row;
+        justify-content: space-between;
+  
+    }
+    .footer-txt{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 13.7rem;
+    }
+    .footer-tx{
+        margin-top: 0;
+    }
+    .icons{
+        margin-top: 0;
+    }
+   
+    .mail{
+        font-size: 1.8rem;
+        color: #191826;
+        font-weight: 700;
+        line-height: 3.2rem;
+    }
+
+}
